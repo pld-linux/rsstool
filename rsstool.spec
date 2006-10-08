@@ -7,21 +7,21 @@ License:	GPL
 Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
 # Source0-md5:	ed803d66598eae4c5f74cf2d9361a31b
-URL:		http://rsstool.berlios.de
+URL:		http://rsstool.berlios.de/
 BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Read, parse, merge and write RSS (and Atom) feeds. It has some other
-functions build-in like text, html, property file output or templates
+functions build-in like text, HTML, property file output or templates
 with custom tags to insert RSS feeds into pages that could be uploaded
-to a server that supports only static html
+to a server that supports only static HTML.
 
 %description -l pl
-rsstool czyta, parsuje, ³±czy i zapisuje kana³y RSS (i ATOM). Pozwala
-na generowanie wyj¶cia w postaci RSS, html i txt. Mo¿liwe jest te¿
-tworzenie szablonów do wstawienia rss na stronê www w przypadku gdy
-serwer obs³uguje jedynie statyczny html.
+rsstool czyta, analizuje, ³±czy i zapisuje kana³y RSS (i ATOM). Ma te¿
+wbudowane funkcje do tworzenia plików tekstowych, HTML i w³a¶ciwo¶ci
+lub szablonów z w³asnymi znacznikami do wstawiania RSS na strony WWW w
+przypadku, gdy serwer obs³uguje jedynie statyczny HTML.
 
 %prep
 %setup -q -n %{name}-%{version}-src
@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
 %doc changes.html
+%attr(755,root,root) %{_bindir}/*

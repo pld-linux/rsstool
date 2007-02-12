@@ -1,5 +1,5 @@
 Summary:	Read, parse, merge and write RSS (and Atom) feeds
-Summary(pl.UTF-8):   Narzędzie do manipulowania kanałami RSS (oraz ATOM)
+Summary(pl.UTF-8):	Narzędzie do manipulowania kanałami RSS (oraz ATOM)
 Name:		rsstool
 Version:	0.9.10
 Release:	1

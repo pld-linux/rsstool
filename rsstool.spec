@@ -1,5 +1,5 @@
 Summary:	Read, parse, merge and write RSS (and Atom) feeds
-Summary(pl.UTF-8):	Narzƒôdzie do manipulowania kana≈Çami RSS (oraz ATOM)
+Summary(pl):	NarzÍdzie do manipulowania kana≥ami RSS (oraz ATOM)
 Name:		rsstool
 Version:	0.9.10
 Release:	1
@@ -17,11 +17,11 @@ functions build-in like text, HTML, property file output or templates
 with custom tags to insert RSS feeds into pages that could be uploaded
 to a server that supports only static HTML.
 
-%description -l pl.UTF-8
-rsstool czyta, analizuje, ≈ÇƒÖczy i zapisuje kana≈Çy RSS (i ATOM). Ma te≈º
-wbudowane funkcje do tworzenia plik√≥w tekstowych, HTML i w≈Ça≈õciwo≈õci
-lub szablon√≥w z w≈Çasnymi znacznikami do wstawiania RSS na strony WWW w
-przypadku, gdy serwer obs≈Çuguje jedynie statyczny HTML.
+%description -l pl
+rsstool czyta, analizuje, ≥±czy i zapisuje kana≥y RSS (i ATOM). Ma teø
+wbudowane funkcje do tworzenia plikÛw tekstowych, HTML i w≥a∂ciwo∂ci
+lub szablonÛw z w≥asnymi znacznikami do wstawiania RSS na strony WWW w
+przypadku, gdy serwer obs≥uguje jedynie statyczny HTML.
 
 %prep
 %setup -q -n %{name}-%{version}-src

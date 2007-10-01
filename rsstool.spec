@@ -1,13 +1,13 @@
 Summary:	Read, parse, merge and write RSS (and Atom) feeds
 Summary(pl.UTF-8):	Narzędzie do manipulowania kanałami RSS (oraz ATOM)
 Name:		rsstool
-Version:	0.9.10
+Version:	1.0.0rc4
 Release:	1
 License:	GPL
 Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
-# Source0-md5:	5bc2fa5634d92ba2edc679255e52156a
-URL:		http://rsstool.berlios.de/
+# Source0-md5:	d164eb5e04ffdc2fa2ffb2c8599a05dd
+URL:		http://rsstool.y7.ath.cx/
 BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc changes.html faq.html
+%doc changes.html faq.html contrib/
 %attr(755,root,root) %{_bindir}/*

@@ -1,15 +1,16 @@
-%define 	_rc rc4
 Summary:	Read, parse, merge and write RSS (and Atom) feeds
+Summary(hu.UTF-8):	RSS (és Atom) források olvasása, feldolgozása, írása
 Summary(pl.UTF-8):	Narzędzie do manipulowania kanałami RSS (oraz ATOM)
 Name:		rsstool
 Version:	1.0.0
-Release:	0.%{_rc}.1
+Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	http://download.berlios.de/rsstool/%{name}-%{version}%{_rc}-src.tar.gz
-# Source0-md5:	d164eb5e04ffdc2fa2ffb2c8599a05dd
+Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
+# Source0-md5:	a3e003045d051491150385f556467a42
 URL:		http://rsstool.y7.ath.cx/
 BuildRequires:	libxml2-devel
+BuildRequires:	curl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -18,6 +19,11 @@ functions build-in like text, HTML, property file output or templates
 with custom tags to insert RSS feeds into pages that could be uploaded
 to a server that supports only static HTML.
 
+%description -l hu.UTF-8
+RSS (és Atom) források olvasása, feldolgozása és írása. Beépített
+funkcióival képes egyszerű szövegbe, HTML-be, stb. exportálni, ill.
+tetszőleges kimeneti formátumot produkálni tag-ekkel.
+
 %description -l pl.UTF-8
 rsstool czyta, analizuje, łączy i zapisuje kanały RSS (i ATOM). Ma też
 wbudowane funkcje do tworzenia plików tekstowych, HTML i właściwości
@@ -25,7 +31,7 @@ lub szablonów z własnymi znacznikami do wstawiania RSS na strony WWW w
 przypadku, gdy serwer obsługuje jedynie statyczny HTML.
 
 %prep
-%setup -q -n %{name}-%{version}%{_rc}-src
+%setup -q -n %{name}-%{version}-src
 
 %build
 cd src

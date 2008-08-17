@@ -9,8 +9,8 @@ Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
 # Source0-md5:	a3e003045d051491150385f556467a42
 URL:		http://rsstool.y7.ath.cx/
-BuildRequires:	libxml2-devel
 BuildRequires:	curl-devel
+BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

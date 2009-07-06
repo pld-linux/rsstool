@@ -3,7 +3,7 @@ Summary(hu.UTF-8):	RSS (és Atom) források olvasása, feldolgozása, írása
 Summary(pl.UTF-8):	Narzędzie do manipulowania kanałami RSS (oraz ATOM)
 Name:		rsstool
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
